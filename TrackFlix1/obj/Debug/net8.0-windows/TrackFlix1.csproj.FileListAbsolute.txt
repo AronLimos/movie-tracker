@@ -1,0 +1,46 @@
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1_MarkupCompile.cache
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1_MarkupCompile.lref
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\bin\Debug\net8.0-windows\TrackFlix1.exe
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\bin\Debug\net8.0-windows\TrackFlix1.deps.json
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\bin\Debug\net8.0-windows\TrackFlix1.runtimeconfig.json
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\bin\Debug\net8.0-windows\TrackFlix1.dll
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\bin\Debug\net8.0-windows\TrackFlix1.pdb
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.g.resources
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.AssemblyInfoInputs.cache
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.AssemblyInfo.cs
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.csproj.CoreCompileInputs.cache
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.dll
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\refint\TrackFlix1.dll
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.pdb
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.genruntimeconfig.cache
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\ref\TrackFlix1.dll
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.csproj.AssemblyReference.cache
+C:\Users\AronLimos\Desktop\CPRO 1211 (C#)\repos WPF\TrackFlix1#Solution\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.csproj.Up2Date
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\bin\Debug\net8.0-windows\TrackFlix1.exe
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\bin\Debug\net8.0-windows\TrackFlix1.deps.json
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\bin\Debug\net8.0-windows\TrackFlix1.runtimeconfig.json
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\bin\Debug\net8.0-windows\TrackFlix1.dll
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\bin\Debug\net8.0-windows\TrackFlix1.pdb
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.csproj.AssemblyReference.cache
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1_MarkupCompile.cache
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1_MarkupCompile.lref
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.g.resources
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.AssemblyInfoInputs.cache
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.AssemblyInfo.cs
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.csproj.CoreCompileInputs.cache
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.csproj.Up2Date
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.dll
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\refint\TrackFlix1.dll
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.pdb
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\TrackFlix1.genruntimeconfig.cache
+C:\Users\joash\Desktop\TrackFlix1\TrackFlix1\obj\Debug\net8.0-windows\ref\TrackFlix1.dll
