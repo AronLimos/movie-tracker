@@ -1,0 +1,13 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TrackFlix1_agsx2303_wpftmp
+build_property.ProjectDir = C:\Users\joash\Desktop\01 CPRO Winter 2024\01 CPRO Git Repo\cpro-term2-csharp-proj\movie-tracker\TrackFlix1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
