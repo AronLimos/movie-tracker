@@ -19,12 +19,5 @@
     "Year": 1972,
     "Duration": 175,
     "Seen": false
-  },
-  {
-    "MovieName": "The Dark Knight",
-    "Director": "Christopher Nolan",
-    "Year": 2008,
-    "Duration": 152,
-    "Seen": true
   }
 ]
