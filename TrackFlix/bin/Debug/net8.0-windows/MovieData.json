@@ -19,5 +19,61 @@
     "Year": 1972,
     "Duration": 175,
     "Seen": false
+  },
+  {
+    "MovieName": "The Dark Knight",
+    "Director": "Christopher Nolan",
+    "Year": 2008,
+    "Duration": 152,
+    "Seen": true
+  },
+  {
+    "MovieName": "Intersterllar",
+    "Director": "Hans Zimmer",
+    "Year": 2014,
+    "Duration": 169,
+    "Seen": false
+  },
+  {
+    "MovieName": "Whiplash",
+    "Director": "Damien Chazelle",
+    "Year": 2014,
+    "Duration": 107,
+    "Seen": false
+  },
+  {
+    "MovieName": "Terrifier",
+    "Director": "Damien Leone",
+    "Year": 2018,
+    "Duration": 85,
+    "Seen": true
+  },
+  {
+    "MovieName": "1917",
+    "Director": "Sam Mendes",
+    "Year": 2020,
+    "Duration": 119,
+    "Seen": false
+  },
+  {
+    "MovieName": "Life of Pi",
+    "Director": "Ang Lee",
+    "Year": 2012,
+    "Duration": 127,
+    "Seen": true
+  },
+  {
+    "MovieName": "Joker",
+    "Director": "Todd Phillips",
+    "Year": 2019,
+    "Duration": 162,
+    "Seen": true
+  },
+  {
+    "MovieName": "TEST",
+    "Director": "TEST",
+    "Year": 1234,
+    "Duration": 1234,
+    "Seen": true
   }
 ]

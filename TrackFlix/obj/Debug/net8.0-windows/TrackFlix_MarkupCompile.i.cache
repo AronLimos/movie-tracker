@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\AronLimos\Desktop\Assign#3\movie-tracker\TrackFlix\obj\Debug\net8.0-windows\
+C:\Users\AronLimos\Desktop\trackflix-movietracker\movie-tracker\TrackFlix\obj\Debug\net8.0-windows\
 TrackFlix
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\AronLimos\Desktop\Assign#3\movie-tracker\TrackFlix\App.xaml
-11407045341
+C:\Users\AronLimos\Desktop\trackflix-movietracker\movie-tracker\TrackFlix\App.xaml
+21362469421
 
-6-849558023
-199-2060266404
-MainWindow.xaml;
+7997160627
+1991359435457
+AddMovieWindow.xaml;MainWindow.xaml;
 
 True
 

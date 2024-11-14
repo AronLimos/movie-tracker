@@ -8,17 +8,28 @@
        Title="TrackFlix: Personal Movie Tracker Desktop App" Height="350" Width="800"
         ResizeMode="NoResize">
     <Grid>
-        <!--Add Column Button-->
-        <Button Content="Add" HorizontalAlignment="Left" Margin="29,20,0,0" VerticalAlignment="Top" Width="150"/>
-        <!--Delete Column Button-->
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="29,45,0,0" VerticalAlignment="Top" Width="150"
+        <!--Add Movie Button-->
+        <Button Content="Add" 
+                HorizontalAlignment="Left" 
+                Margin="29,20,0,0" 
+                VerticalAlignment="Top" 
+                Width="150"
+                Click="btnAdd_Click"/>
+        
+        <!--Delete Movie Button-->
+        <Button Content="Delete" 
+                HorizontalAlignment="Left" 
+                Margin="29,45,0,0" 
+                VerticalAlignment="Top" Width="150"
                 Click="btnDelete_Click"/>
 
-        <!--Movie List-->
+        <!--Movie List Display-->
         <DataGrid x:Name="DataGrid" 
                   ItemsSource="{Binding Movies}" 
                   AutoGenerateColumns="False"
                   Margin="208,10,10,10">
+            
+            <!-- Data Grid Columns for Movie Types-->
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Movie Name" 
                                     Binding="{Binding MovieName}"
@@ -37,5 +48,6 @@
                                     Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
+        
     </Grid>
 </Window>
