@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5TqhEfQGeIk=",
+  "dgSpecHash": "vSFAUo4rh3o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\joash\\Desktop\\01 CPRO Winter 2024\\01 CPRO Git Repo\\cpro-term2-csharp-proj\\movie-tracker\\TrackFlix\\TrackFlix.csproj",
+  "projectFilePath": "C:\\Users\\AronLimos\\Desktop\\trackflix-movietracker\\movie-tracker\\TrackFlix\\TrackFlix.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\joash\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\AronLimos\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
