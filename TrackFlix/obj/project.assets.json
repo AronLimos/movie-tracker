@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AronLimos\\Desktop\\Assign#3\\movie-tracker\\TrackFlix\\TrackFlix.csproj",
+      "projectUniqueName": "C:\\Users\\AronLimos\\Desktop\\trackflix-movietracker\\movie-tracker\\TrackFlix\\TrackFlix.csproj",
       "projectName": "TrackFlix",
-      "projectPath": "C:\\Users\\AronLimos\\Desktop\\Assign#3\\movie-tracker\\TrackFlix\\TrackFlix.csproj",
+      "projectPath": "C:\\Users\\AronLimos\\Desktop\\trackflix-movietracker\\movie-tracker\\TrackFlix\\TrackFlix.csproj",
       "packagesPath": "C:\\Users\\AronLimos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AronLimos\\Desktop\\Assign#3\\movie-tracker\\TrackFlix\\obj\\",
+      "outputPath": "C:\\Users\\AronLimos\\Desktop\\trackflix-movietracker\\movie-tracker\\TrackFlix\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -128,7 +128,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
