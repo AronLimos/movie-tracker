@@ -1,36 +1,47 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using System.Windows;
+﻿using System.Windows;
 using TrackFlix1;
 
 namespace TrackFlix
 {
-   
+
     public partial class AddMovieWindow : Window
     {
-        public Movie NewMovie { get; set; } // Reference to MainWindow
+        public Movie NewMovie { get; set; }
         public AddMovieWindow()
         {
             InitializeComponent();
         }
 
-        // Handiling the add button click
         private void OnAddMovieClick(object sender, RoutedEventArgs e)
         {
-            // Retrive valies from the input fields
+            /********************************************
+            * Retrieves the movie details from the input fields,
+            * validates the data, and creates a new Movie object
+            * to be added to the movie collection in MainWindow.
+            ********************************************/
+
+            // Retrieve values from input fields
             string movieName = txtMovieName.Text;
             string director = txtDirector.Text;
-            // Inizialise integer varibale, will insert values inside the variable.
             int year;
             int duration;
-            // True/Flase statemnt for status
             bool seen = Seen.IsChecked ?? false;
 
-
-            // Validate the input fields
+            // Validate input fields
             if (string.IsNullOrWhiteSpace(movieName) || string.IsNullOrWhiteSpace(director) ||
-           !int.TryParse(txtYear.Text, out year) || !int.TryParse(txtMinute.Text, out duration))
+                !int.TryParse(txtYear.Text, out year) || !int.TryParse(txtMinute.Text, out duration))
             {
                 MessageBox.Show("Please fill in all fields correctly.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            if (year <= 0)
+            {
+                MessageBox.Show("Please enter a valid year.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            if (duration <= 0)
+            {
+                MessageBox.Show("Please enter a valid duration.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
@@ -43,16 +54,18 @@ namespace TrackFlix
                 Duration = duration,
                 Seen = seen
             };
-            // Indicate that the movie is successfully added, close the window
+
+            // Indicate success and close the window
             DialogResult = true;
             Close();
-
-
-
         }
-
         private void OnCancelClick(object sender, RoutedEventArgs e)
         {
+            /********************************************
+            * Indicates that the user canceled the operation,
+            * preventing any movie from being added, and closes the window.
+            ********************************************/
+
             DialogResult = false;  // Indicate that no movie was added
             Close();
         }

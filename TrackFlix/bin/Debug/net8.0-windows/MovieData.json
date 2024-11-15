@@ -70,10 +70,10 @@
     "Seen": true
   },
   {
-    "MovieName": "TEST",
-    "Director": "TEST",
-    "Year": 1234,
-    "Duration": 1234,
+    "MovieName": "TestMovie",
+    "Director": "TestDirector",
+    "Year": 123,
+    "Duration": 230,
     "Seen": true
   }
 ]

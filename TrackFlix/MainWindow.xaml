@@ -23,13 +23,14 @@
                 VerticalAlignment="Top" Width="150"
                 Click="btnDelete_Click"/>
 
-        <!--Movie List Display-->
+        <!-- Movie List Display (DataGrid for showing movie data) -->
         <DataGrid x:Name="DataGrid" 
                   ItemsSource="{Binding Movies}" 
                   AutoGenerateColumns="False"
-                  Margin="208,10,10,10">
-            
-            <!-- Data Grid Columns for Movie Types-->
+                  Margin="208,10,10,10"
+                  SelectionMode="Single">
+
+            <!-- Data Grid Columns for Movie Types -->
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Movie Name" 
                                     Binding="{Binding MovieName}"

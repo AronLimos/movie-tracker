@@ -96,3 +96,5 @@ C:\Users\AronLimos\Desktop\trackflix-movietracker\movie-tracker\TrackFlix\obj\De
 C:\Users\AronLimos\Desktop\trackflix-movietracker\movie-tracker\TrackFlix\obj\Debug\net8.0-windows\TrackFlix.csproj.Up2Date
 C:\Users\AronLimos\Desktop\trackflix-movietracker\movie-tracker\TrackFlix\obj\Debug\net8.0-windows\TrackFlix.genruntimeconfig.cache
 C:\Users\AronLimos\Desktop\trackflix-movietracker\movie-tracker\TrackFlix\obj\Debug\net8.0-windows\ref\TrackFlix.dll
+C:\Users\joash\Desktop\01 CPRO Winter 2024\01 CPRO Git Repo\cpro-term2-csharp-proj\movie-tracker\TrackFlix\obj\Debug\net8.0-windows\AddMovieWindow.g.cs
+C:\Users\joash\Desktop\01 CPRO Winter 2024\01 CPRO Git Repo\cpro-term2-csharp-proj\movie-tracker\TrackFlix\obj\Debug\net8.0-windows\AddMovieWindow.baml
