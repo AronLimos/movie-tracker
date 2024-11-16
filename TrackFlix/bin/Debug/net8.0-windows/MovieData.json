@@ -68,12 +68,5 @@
     "Year": 2019,
     "Duration": 162,
     "Seen": true
-  },
-  {
-    "MovieName": "TestMovie",
-    "Director": "TestDirector",
-    "Year": 123,
-    "Duration": 230,
-    "Seen": true
   }
 ]

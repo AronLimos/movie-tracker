@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TrackFlix"
         mc:Ignorable="d"
-        Title="Add Movie" Height="300" Width="420">
+        Title="Add Movie" Height="300" Width="420"  ResizeMode="NoResize">
     <Grid>
         <!-- Movie Name input field -->
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Movie Name: " VerticalAlignment="Top" Width="190"/>
