@@ -10,9 +10,21 @@
     <Compile Update="AddMovieWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EditMovieWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FilterMovieWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddMovieWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditMovieWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FilterMovieWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\AronLimos\Desktop\trackflix-movietracker\movie-tracker\TrackFlix\App.xaml
-21362469421
-
-7997160627
+41040562072
+1-1763472575
+9-437161590
 1991359435457
-AddMovieWindow.xaml;MainWindow.xaml;
+AddMovieWindow.xaml;EditMovieWindow.xaml;FilterMovieWindow.xaml;MainWindow.xaml;
 
-False
+True
 

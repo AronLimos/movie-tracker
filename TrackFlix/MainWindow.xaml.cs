@@ -128,6 +128,33 @@ namespace TrackFlix1
                 SaveMoviesToJson();
             }
         }
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            /********************************************
+           * Opens a dialog to edit a movie. If confirmed,
+           * the edited movie is updated to the collection and
+           * the JSON file is updated.
+           ********************************************/
+
+            // Instantiate the AddMovieWindow dialog
+            EditMovieWindow editMovieWindow = new EditMovieWindow();
+
+            // Show thw dialog as a modal window
+            bool? result = editMovieWindow.ShowDialog();
+        }
+        private void btnFilter_Click(object sender, RoutedEventArgs e)
+        {
+            /********************************************
+          * Opens a dialog to filter movies. If confirmed,
+          * the movie filtered.
+          ********************************************/
+
+            // Instantiate the AddMovieWindow dialog
+            FilterMovieWindow filterMovieWindow = new FilterMovieWindow();
+
+            // Show thw dialog as a modal window
+            bool? result = filterMovieWindow.ShowDialog();
+        }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
@@ -164,5 +191,7 @@ namespace TrackFlix1
                                 MessageBoxImage.Warning);
             }
         }
+
+        
     }
 }

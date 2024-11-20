@@ -6,29 +6,49 @@
         xmlns:local="clr-namespace:TrackFlix1"
         mc:Ignorable="d"
        Title="TrackFlix: Personal Movie Tracker Desktop App" Height="350" Width="800"
-        ResizeMode="NoResize">
-    <Grid>
+        ResizeMode="NoResize" Background="Black">
+    <Grid Background="Black" TextElement.FontFamily="Comic Sans MS">
+        
         <!--Add Movie Button-->
         <Button Content="Add" 
                 HorizontalAlignment="Left" 
                 Margin="29,20,0,0" 
                 VerticalAlignment="Top" 
                 Width="150"
-                Click="btnAdd_Click"/>
+                Click="btnAdd_Click"
+                 Background="#ffffff"/>
         
         <!--Delete Movie Button-->
         <Button Content="Delete" 
                 HorizontalAlignment="Left" 
-                Margin="29,45,0,0" 
+                Margin="29,98,0,0" 
                 VerticalAlignment="Top" Width="150"
-                Click="btnDelete_Click"/>
+                Click="btnDelete_Click"
+                Background="#ffffff"/>
+        
+        <!--Edit Movie Button-->
+        <Button Content="Edit" 
+                HorizontalAlignment="Left" 
+                Margin="29,46,0,0" 
+                VerticalAlignment="Top" Width="150"
+                Click="btnEdit_Click"
+                  Background="#ffffff"/>
+        
+        <!--Filter Movie Button-->
+        <Button Content="Filter" 
+                HorizontalAlignment="Left" 
+                Margin="29,72,0,0" 
+                VerticalAlignment="Top" Width="150"
+                Click="btnFilter_Click"
+                Background="#ffffff"/>
 
         <!-- Movie List Display (DataGrid for showing movie data) -->
         <DataGrid x:Name="DataGrid" 
                   ItemsSource="{Binding Movies}" 
                   AutoGenerateColumns="False"
                   Margin="208,10,10,10"
-                  SelectionMode="Single">
+                  SelectionMode="Single"
+                  Background="Black">
 
             <!-- Data Grid Columns for Movie Types -->
             <DataGrid.Columns>
@@ -50,5 +70,6 @@
             </DataGrid.Columns>
         </DataGrid>
         
+
     </Grid>
 </Window>

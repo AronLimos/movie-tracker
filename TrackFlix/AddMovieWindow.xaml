@@ -6,36 +6,47 @@
         xmlns:local="clr-namespace:TrackFlix"
         mc:Ignorable="d"
         Title="Add Movie" Height="300" Width="420"  ResizeMode="NoResize">
-    <Grid>
+    <Grid Background="DarkGray">
         <!-- Movie Name input field -->
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Movie Name: " VerticalAlignment="Top" Width="190"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Movie Name: " 
+                   VerticalAlignment="Top" Width="190"/>
         <TextBox HorizontalAlignment="Left" Margin="200,10,0,0" TextWrapping="Wrap" 
           x:Name="txtMovieName" VerticalAlignment="Top" Width="190"/>
 
         <!-- Director input field -->
-        <TextBlock HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="Director: " VerticalAlignment="Top" Width="190"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,50,0,0" TextWrapping="Wrap" x:Name="txtDirector" VerticalAlignment="Top" Width="190"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="Director: "
+                   VerticalAlignment="Top" Width="190"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,50,0,0" TextWrapping="Wrap" x:Name="txtDirector"
+                 VerticalAlignment="Top" Width="190"/>
 
         <!-- Year input field -->
-        <TextBlock HorizontalAlignment="Left" Margin="10,90,0,0" TextWrapping="Wrap" Text="Year: " VerticalAlignment="Top" Width="190"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,90,0,0" TextWrapping="Wrap" x:Name="txtYear" VerticalAlignment="Top" Width="190"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,90,0,0" TextWrapping="Wrap" Text="Year: " 
+                   VerticalAlignment="Top" Width="190"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,90,0,0" TextWrapping="Wrap" x:Name="txtYear"
+                 VerticalAlignment="Top" Width="190"/>
 
         <!-- Duration (minutes) input field -->
-        <TextBlock HorizontalAlignment="Left" Margin="10,130,0,0" TextWrapping="Wrap" Text="Duration (Minutes): " VerticalAlignment="Top" Width="190"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,130,0,0" TextWrapping="Wrap" x:Name="txtMinute" VerticalAlignment="Top" Width="190"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,130,0,0" TextWrapping="Wrap" Text="Duration (Minutes): " 
+                   VerticalAlignment="Top" Width="190"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,130,0,0" TextWrapping="Wrap" x:Name="txtMinute" 
+                 VerticalAlignment="Top" Width="190"/>
 
         <!-- Movie watched status (Seen or Unseen) -->
-        <TextBlock HorizontalAlignment="Left" Margin="10,170,0,0" TextWrapping="Wrap" Text="Watch Status: " VerticalAlignment="Top" Width="190"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,170,0,0" TextWrapping="Wrap" Text="Watch Status: " 
+                   VerticalAlignment="Top" Width="190"/>
         <!-- Checkbox for indicating whether the movie has been seen -->
-        <CheckBox Content="Seen" HorizontalAlignment="Left" Margin="200,170,0,0" VerticalAlignment="Top" Height="18" Width="86" x:Name="Seen"/>
+        <CheckBox Content="Seen" HorizontalAlignment="Left" Margin="200,170,0,0" 
+                  VerticalAlignment="Top" Height="18" Width="86" x:Name="Seen"/>
 
         <!-- Button to add the movie -->
-        <Button Content="Add" HorizontalAlignment="Left" Margin="200,210,0,0" VerticalAlignment="Top" Height="25" Width="90"
-        Click="OnAddMovieClick"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="200,210,0,0" 
+                VerticalAlignment="Top" Height="25" Width="90"
+                Click="OnAddMovieClick"/>
 
         <!-- Button to cancel adding a movie -->
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="300,210,0,0" VerticalAlignment="Top" Height="25" Width="90"
-        Click="OnCancelClick"/>
-
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="300,210,0,0"
+                VerticalAlignment="Top" Height="25" Width="90"
+                Click="OnCancelClick"/>
+        
     </Grid>
 </Window>
