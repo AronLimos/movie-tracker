@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TrackFlix"
         mc:Ignorable="d"
-        Title="Edit Movie" Height="300" Width="420" ResizeMode="NoResize" >
+        Title="Edit Movie" Height="300" Width="420" 
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="DarkGray">
         <!-- Movie Name input field -->
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Movie Name: " 

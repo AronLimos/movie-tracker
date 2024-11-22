@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 using TrackFlix1;
 
 namespace TrackFlix
@@ -27,6 +28,7 @@ namespace TrackFlix
         private void OnFilterMovieClick(object sender, RoutedEventArgs e)
         {
             // Code here and logic here
+          
         }
 
         private void OnCancelClick(object sender, RoutedEventArgs e)

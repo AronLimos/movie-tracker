@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TrackFlix1"
         mc:Ignorable="d"
        Title="TrackFlix: Personal Movie Tracker Desktop App" Height="350" Width="800"
-        ResizeMode="NoResize" Background="Black">
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="Black">
     <Grid Background="Black" TextElement.FontFamily="Comic Sans MS">
         
         <!--Add Movie Button-->
@@ -16,7 +16,8 @@
                 VerticalAlignment="Top" 
                 Width="150"
                 Click="btnAdd_Click"
-                 Background="#ffffff"/>
+                Background="#ffffff"
+                Foreground="DarkRed"/>
         
         <!--Delete Movie Button-->
         <Button Content="Delete" 
@@ -24,7 +25,8 @@
                 Margin="29,98,0,0" 
                 VerticalAlignment="Top" Width="150"
                 Click="btnDelete_Click"
-                Background="#ffffff"/>
+                Background="#ffffff"
+                Foreground="DarkRed"/>
         
         <!--Edit Movie Button-->
         <Button Content="Edit" 
@@ -32,7 +34,8 @@
                 Margin="29,46,0,0" 
                 VerticalAlignment="Top" Width="150"
                 Click="btnEdit_Click"
-                  Background="#ffffff"/>
+                Background="#ffffff"
+                Foreground="DarkRed"/>
         
         <!--Filter Movie Button-->
         <Button Content="Filter" 
@@ -40,7 +43,8 @@
                 Margin="29,72,0,0" 
                 VerticalAlignment="Top" Width="150"
                 Click="btnFilter_Click"
-                Background="#ffffff"/>
+                Background="#ffffff"
+                Foreground="DarkRed"/>
 
         <!-- Movie List Display (DataGrid for showing movie data) -->
         <DataGrid x:Name="DataGrid" 
