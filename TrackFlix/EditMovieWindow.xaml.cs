@@ -26,9 +26,23 @@ namespace TrackFlix
             InitializeComponent();
         }
 
+        public void ShowEditMovie(Movie movie)
+        {
+      
+            txtMovieName.Text = movie.MovieName;
+            txtDirector.Text = movie.Director;
+            txtYear.Text = movie.Year.ToString();
+            txtMinute.Text = movie.Duration.ToString();
+            Seen.IsChecked = movie.Seen;
+            // Open the window modally
+            this.Show();
+
+        }
+
         private void OnEditMovieClick(object sender, RoutedEventArgs e)
         {
             // Code here and logic here
+
         }
 
         private void OnCancelClick(object sender, RoutedEventArgs e)
@@ -38,9 +52,9 @@ namespace TrackFlix
            * preventing any movie from being updated, and closes the window.
            ********************************************/
 
-            DialogResult = false;  // Indicate that no movie was added
-            Close();
+            //DialogResult = false;  // Indicate that no movie was added
+           this. Close();
         }
-
+    
     }
 }

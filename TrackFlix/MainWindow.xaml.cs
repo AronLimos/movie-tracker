@@ -16,6 +16,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using TrackFlix;
 
 namespace TrackFlix1
@@ -31,6 +32,9 @@ namespace TrackFlix1
         public int Year { get; set; }
         public int Duration { get; set; }
         public bool Seen { get; set; }
+
+
+        
     }
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
@@ -139,9 +143,23 @@ namespace TrackFlix1
             // Instantiate the AddMovieWindow dialog
             EditMovieWindow editMovieWindow = new EditMovieWindow();
 
-            // Show thw dialog as a modal window
-            bool? result = editMovieWindow.ShowDialog();
+            // Get the selected movie from the DataGrid
+            var selectedMovie = DataGrid.SelectedItem as Movie;
+
+            if (selectedMovie != null)
+            {
+                // If selection is not empty Open XAML window with selected movie
+                editMovieWindow.ShowEditMovie(selectedMovie);
+            }
+            else
+            {
+                MessageBox.Show("Please select a movie to Edit.",
+                                "No Movie Selected",
+                                MessageBoxButton.OK,
+                                MessageBoxImage.Error);
+            }
         }
+
         private void btnFilter_Click(object sender, RoutedEventArgs e)
         {
             /********************************************
@@ -152,8 +170,10 @@ namespace TrackFlix1
             // Instantiate the AddMovieWindow dialog
             FilterMovieWindow filterMovieWindow = new FilterMovieWindow();
 
-            // Show thw dialog as a modal window
-            bool? result = filterMovieWindow.ShowDialog();
+            // Get the selected movie from the DataGrid
+            var selectedMovie = DataGrid.SelectedItem as Movie;
+
+           
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -172,7 +192,7 @@ namespace TrackFlix1
                 var result = MessageBox.Show($"Are you sure you want to delete {selectedMovie.MovieName}?",
                                              "Delete Confirmation",
                                              MessageBoxButton.YesNo,
-                                             MessageBoxImage.Warning);
+                                             MessageBoxImage.Error);
 
                 if (result == MessageBoxResult.Yes)
                 {
