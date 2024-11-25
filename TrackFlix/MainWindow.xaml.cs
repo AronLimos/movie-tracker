@@ -32,9 +32,7 @@ namespace TrackFlix1
         public int Year { get; set; }
         public int Duration { get; set; }
         public bool Seen { get; set; }
-
-
-        
+   
     }
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
@@ -70,6 +68,8 @@ namespace TrackFlix1
 
             // Load movie data from the JSON file.
             LoadMovies();
+
+
 
             // Set the DataContext for data binding in the UI.
             DataContext = this;
@@ -150,6 +150,23 @@ namespace TrackFlix1
             {
                 // If selection is not empty Open XAML window with selected movie
                 editMovieWindow.ShowEditMovie(selectedMovie);
+
+                if (editMovieWindow.DialogResult == true)
+                {
+                    // Retrieve the newly edited movie from EditMovieWindow
+                    Movie newMovie = editMovieWindow.EditMovie;
+
+                    // Removes the old movie first
+                    Movies.Remove(selectedMovie);
+
+                    // Adds the newly edited Movie
+                    Movies.Add(newMovie);
+
+                    // Save the updated movie collection to the JSON file
+                    SaveMoviesToJson();
+
+                }
+
             }
             else
             {

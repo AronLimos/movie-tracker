@@ -34,7 +34,7 @@ namespace TrackFlix
                 MessageBox.Show("Please fill in all fields correctly.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            if (year <= 0)
+            if (year <= 0 )
             {
                 MessageBox.Show("Please enter a valid year.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
