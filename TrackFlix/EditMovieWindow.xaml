@@ -7,46 +7,50 @@
         mc:Ignorable="d"
         Title="Edit Movie" Height="300" Width="420" 
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid Background="DarkGray">
+    <Grid Background="Black" TextElement.FontFamily="Comic Sans MS">
         <!-- Movie Name input field -->
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Movie Name: " 
-             VerticalAlignment="Top" Width="190"/>
+             VerticalAlignment="Top" Width="190" Foreground="White"/>
         <TextBox HorizontalAlignment="Left" Margin="200,10,0,0" TextWrapping="Wrap" 
     x:Name="txtMovieName" VerticalAlignment="Top" Width="190"/>
 
         <!-- Director input field -->
         <TextBlock HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="Director: "
-             VerticalAlignment="Top" Width="190"/>
+             VerticalAlignment="Top" Width="190" Foreground="White"/>
         <TextBox HorizontalAlignment="Left" Margin="200,50,0,0" TextWrapping="Wrap" x:Name="txtDirector"
            VerticalAlignment="Top" Width="190"/>
 
         <!-- Year input field -->
         <TextBlock HorizontalAlignment="Left" Margin="10,90,0,0" TextWrapping="Wrap" Text="Year: " 
-             VerticalAlignment="Top" Width="190"/>
+             VerticalAlignment="Top" Width="190" Foreground="White"/>
         <TextBox HorizontalAlignment="Left" Margin="200,90,0,0" TextWrapping="Wrap" x:Name="txtYear"
            VerticalAlignment="Top" Width="190"/>
 
         <!-- Duration (minutes) input field -->
         <TextBlock HorizontalAlignment="Left" Margin="10,130,0,0" TextWrapping="Wrap" Text="Duration (Minutes): " 
-             VerticalAlignment="Top" Width="190"/>
+             VerticalAlignment="Top" Width="190" Foreground="White"/>
         <TextBox HorizontalAlignment="Left" Margin="200,130,0,0" TextWrapping="Wrap" x:Name="txtMinute" 
            VerticalAlignment="Top" Width="190"/>
 
         <!-- Movie watched status (Seen or Unseen) -->
         <TextBlock HorizontalAlignment="Left" Margin="10,170,0,0" TextWrapping="Wrap" Text="Watch Status: " 
-             VerticalAlignment="Top" Width="190"/>
+             VerticalAlignment="Top" Width="190" Foreground="White"/>
         <!-- Checkbox for indicating whether the movie has been seen -->
-        <CheckBox Content="Seen" HorizontalAlignment="Left" Margin="200,170,0,0" 
+        <CheckBox Content="Seen" HorizontalAlignment="Left" Margin="200,170,0,0" Foreground="White" 
             VerticalAlignment="Top" Height="18" Width="86" x:Name="Seen"/>
 
-        <!-- Button to add the movie -->
+        <!-- Button to Edit the movie -->
         <Button Content="Edit" HorizontalAlignment="Left" Margin="200,210,0,0" 
-          VerticalAlignment="Top" Height="25" Width="90"
+          VerticalAlignment="Top" Height="25" Width="90"                 
+                Background="#ffffff"
+                Foreground="DarkRed"
           Click="OnEditMovieClick"/>
 
         <!-- Button to cancel adding a movie -->
         <Button Content="Cancel" HorizontalAlignment="Left" Margin="300,210,0,0"
           VerticalAlignment="Top" Height="25" Width="90"
+                 Background="#ffffff"
+                 Foreground="DarkRed"
           Click="OnCancelClick"/>
     </Grid>
 </Window>
