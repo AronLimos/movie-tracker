@@ -1,30 +1,9 @@
 [
   {
-    "MovieName": "Inception",
-    "Director": "Christopher Nolan",
-    "Year": 2010,
-    "Duration": 148,
-    "Seen": true
-  },
-  {
-    "MovieName": "The Matrix",
-    "Director": "Lana Wachowski, Lilly Wachowski",
-    "Year": 1999,
-    "Duration": 136,
-    "Seen": false
-  },
-  {
     "MovieName": "The Godfather",
     "Director": "Francis Ford Coppola",
     "Year": 1972,
     "Duration": 175,
-    "Seen": false
-  },
-  {
-    "MovieName": "The Dark Knight",
-    "Director": "Christopher Nolan",
-    "Year": 2008,
-    "Duration": 152,
     "Seen": true
   },
   {
@@ -32,20 +11,13 @@
     "Director": "Hans Zimmer",
     "Year": 2014,
     "Duration": 169,
-    "Seen": false
+    "Seen": true
   },
   {
-    "MovieName": "Whiplash",
-    "Director": "Damien Chazelle",
-    "Year": 2014,
-    "Duration": 107,
-    "Seen": false
-  },
-  {
-    "MovieName": "Terrifier",
-    "Director": "Damien Leone",
-    "Year": 2018,
-    "Duration": 85,
+    "MovieName": "ABC",
+    "Director": "ABC",
+    "Year": 100,
+    "Duration": 100,
     "Seen": true
   },
   {
@@ -53,13 +25,13 @@
     "Director": "Sam Mendes",
     "Year": 2020,
     "Duration": 119,
-    "Seen": false
+    "Seen": true
   },
   {
-    "MovieName": "Life of Pi",
-    "Director": "Ang Lee",
-    "Year": 2012,
-    "Duration": 127,
+    "MovieName": "The Matrix",
+    "Director": "Lana Wachowski, Lilly Wachowski",
+    "Year": 1999,
+    "Duration": 136,
     "Seen": true
   },
   {
@@ -70,10 +42,59 @@
     "Seen": true
   },
   {
-    "MovieName": "ABC12",
+    "MovieName": "Whiplash",
+    "Director": "Damien Chazelle",
+    "Year": 2014,
+    "Duration": 107,
+    "Seen": true
+  },
+  {
+    "MovieName": "Life of Pi",
+    "Director": "Ang Lee",
+    "Year": 2012,
+    "Duration": 127,
+    "Seen": true
+  },
+  {
+    "MovieName": "ABC",
     "Director": "ABC",
-    "Year": 100,
-    "Duration": 100,
+    "Year": 400,
+    "Duration": 400,
+    "Seen": true
+  },
+  {
+    "MovieName": "Inception",
+    "Director": "Christopher Nolan",
+    "Year": 2010,
+    "Duration": 148,
+    "Seen": true
+  },
+  {
+    "MovieName": "The Dark Knight",
+    "Director": "Christopher Nolan",
+    "Year": 2008,
+    "Duration": 152,
+    "Seen": true
+  },
+  {
+    "MovieName": "ABC",
+    "Director": "ABC",
+    "Year": 123,
+    "Duration": 123,
+    "Seen": true
+  },
+  {
+    "MovieName": "Terrifier",
+    "Director": "Damien Leone",
+    "Year": 2018,
+    "Duration": 85,
+    "Seen": true
+  },
+  {
+    "MovieName": "asdasd",
+    "Director": "asdasd",
+    "Year": 123,
+    "Duration": 123,
     "Seen": false
   }
 ]

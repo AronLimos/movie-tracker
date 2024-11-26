@@ -19,15 +19,6 @@
                 Background="#ffffff"
                 Foreground="DarkRed"/>
         
-        <!--Delete Movie Button-->
-        <Button Content="Delete" 
-                HorizontalAlignment="Left" 
-                Margin="29,98,0,0" 
-                VerticalAlignment="Top" Width="150"
-                Click="btnDelete_Click"
-                Background="#ffffff"
-                Foreground="DarkRed"/>
-        
         <!--Edit Movie Button-->
         <Button Content="Edit" 
                 HorizontalAlignment="Left" 
@@ -45,12 +36,30 @@
                 Click="btnFilter_Click"
                 Background="#ffffff"
                 Foreground="DarkRed"/>
+        
+        <!--Clear Filter Button-->
+        <Button Content="Clear Filter" 
+                HorizontalAlignment="Left" 
+                Margin="29,98,0,0" 
+                VerticalAlignment="Top" Width="150"
+                Click="btnClrFilter_Click"
+                Background="#ffffff"
+                Foreground="DarkRed"/>
+
+        <!--Delete Movie Button-->
+        <Button Content="Delete" 
+                HorizontalAlignment="Left" 
+                Margin="29,124,0,0" 
+                VerticalAlignment="Top" Width="150"
+                Click="btnDelete_Click"
+                Background="#ffffff"
+                Foreground="DarkRed"/>
 
         <!-- Movie List Display (DataGrid for showing movie data) -->
         <DataGrid x:Name="DataGrid" 
                   ItemsSource="{Binding Movies}" 
                   AutoGenerateColumns="False"
-                  Margin="208,10,10,10"
+                  Margin="200,10,10,40"
                   SelectionMode="Single"
                   Background="Black">
 
@@ -74,6 +83,16 @@
             </DataGrid.Columns>
         </DataGrid>
         
+        <!-- Progress Bar showing watched vs total movies -->
+        <ProgressBar x:Name="ProgressBar" 
+                     HorizontalAlignment="Stretch" 
+                     VerticalAlignment="Bottom" 
+                     Height="20" 
+                     Margin="10,10,10,10" 
+                     Minimum="0" 
+                     Maximum="100" 
+                     Value="0" 
+                     Foreground="DarkRed" />
 
     </Grid>
 </Window>

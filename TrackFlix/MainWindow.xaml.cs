@@ -12,10 +12,12 @@
 using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Input;
 using TrackFlix;
 
@@ -69,7 +71,8 @@ namespace TrackFlix1
             // Load movie data from the JSON file.
             LoadMovies();
 
-
+            // Update progress bar after loading movie data.
+            UpdateProgressBar();
 
             // Set the DataContext for data binding in the UI.
             DataContext = this;
@@ -106,6 +109,23 @@ namespace TrackFlix1
             File.WriteAllText("MovieData.json", json);
         }
 
+        private void UpdateProgressBar()
+        {
+            int totalMovies = Movies.Count;
+            int watchedMovies = Movies.Count(m => m.Seen);
+
+            if (totalMovies == 0)
+            {
+                ProgressBar.Value = 0;
+            }
+            else
+            {
+                // Calculate the progress percentage
+                double percentage = (double) 100 * watchedMovies / totalMovies;
+                ProgressBar.Value = percentage;
+            }
+        }
+
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
             /********************************************
@@ -130,8 +150,11 @@ namespace TrackFlix1
 
                 // Save the updated movie collection to the JSON file
                 SaveMoviesToJson();
+
+                UpdateProgressBar();
             }
         }
+
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
             /********************************************
@@ -165,6 +188,7 @@ namespace TrackFlix1
                     // Save the updated movie collection to the JSON file
                     SaveMoviesToJson();
 
+                    UpdateProgressBar();
                 }
 
             }
@@ -176,21 +200,87 @@ namespace TrackFlix1
                                 MessageBoxImage.Error);
             }
         }
-
+        
         private void btnFilter_Click(object sender, RoutedEventArgs e)
         {
             /********************************************
-          * Opens a dialog to filter movies. If confirmed,
-          * the movie filtered.
-          ********************************************/
+             * Opens a dialog to filter movies. If confirmed,
+             * the movie list is filtered using the criteria provided.
+             ********************************************/
 
-            // Instantiate the AddMovieWindow dialog
+            // Instantiate the FilterMovieWindow dialog
             FilterMovieWindow filterMovieWindow = new FilterMovieWindow();
 
-            // Get the selected movie from the DataGrid
-            var selectedMovie = DataGrid.SelectedItem as Movie;
+            // Show the dialog as a modal window
+            bool? result = filterMovieWindow.ShowDialog();
 
-           
+            if (result == true)
+            {
+                // Retrieve the filter object from the dialog
+                Movie filterCriteria = filterMovieWindow.MovieFilter;
+
+                // Apply the filter to the DataGrid's bound collection
+                ICollectionView collectionView = CollectionViewSource.GetDefaultView(DataGrid.ItemsSource);
+
+                if (collectionView != null)
+                {
+                    // collectionView.Filter = new Predicate<object>(FilterMovies);
+                    // private bool FilterMovies(object item) { }
+                    collectionView.Filter = item =>
+                    {
+                        if (item is Movie movie)
+                        {
+                            // Check if all other filter criteria are empty
+                            bool isOnlyWatchedFilter =
+                                string.IsNullOrEmpty(filterCriteria.MovieName) &&
+                                string.IsNullOrEmpty(filterCriteria.Director) &&
+                                filterCriteria.Year == 0 &&
+                                filterCriteria.Duration == 0;
+
+                            if (isOnlyWatchedFilter)
+                            {
+                                // If all other criteria are empty, use the "Seen" property as the filter
+                                return movie.Seen == filterCriteria.Seen;
+                            }
+
+                            //// Check if all other filter criteria are empty
+                            //bool isOnlyYearFilter =
+                            //    string.IsNullOrEmpty(filterCriteria.MovieName) &&
+                            //    string.IsNullOrEmpty(filterCriteria.Director) &&
+                            //    filterCriteria.Duration == 0 &&
+                            //    filterCriteria.Seen == false;
+                            //if (isOnlyYearFilter)
+                            //{
+                            //    return movie.Year == filterCriteria.Year;
+                            //}
+
+                            // Otherwise, check all criteria
+                            bool matchesMovieName = movie.MovieName.IndexOf(filterCriteria.MovieName, StringComparison.OrdinalIgnoreCase) >= 0;
+                            bool matchesDirector = movie.Director.IndexOf(filterCriteria.Director, StringComparison.OrdinalIgnoreCase) >= 0;
+                            bool matchesYear = filterCriteria.Year == 0 || movie.Year == filterCriteria.Year;
+                            bool matchesDuration = filterCriteria.Duration == 0 || movie.Duration == filterCriteria.Duration;
+
+                            // Combine criteria
+                            return matchesMovieName && matchesDirector && matchesYear && matchesDuration && movie.Seen == filterCriteria.Seen;
+                        }
+                        return false;
+                    };
+
+                    // Refresh the view to apply the filter
+                    collectionView.Refresh();
+                }
+            }
+        }
+        
+        private void btnClrFilter_Click(object sender, RoutedEventArgs e)
+        {
+            // Remove the current filter from the DataGrid view
+            ICollectionView collectionView = CollectionViewSource.GetDefaultView(DataGrid.ItemsSource);
+            if (collectionView != null)
+            {
+                collectionView.Filter = null; // Remove any active filter
+                collectionView.Refresh(); // Refresh the DataGrid to show all records
+            }
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -227,8 +317,9 @@ namespace TrackFlix1
                                 MessageBoxButton.OK,
                                 MessageBoxImage.Warning);
             }
+
+            UpdateProgressBar();
         }
 
-        
     }
 }
