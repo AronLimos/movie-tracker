@@ -61,7 +61,8 @@
                   AutoGenerateColumns="False"
                   Margin="190,10,10,60"
                   SelectionMode="Single"
-                  Background="Black">
+                  Background="Black"
+                  IsReadOnly="True">
 
             <!-- Data Grid Columns for Movie Types -->
             <DataGrid.Columns>

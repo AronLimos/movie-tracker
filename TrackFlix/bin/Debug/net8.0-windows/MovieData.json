@@ -28,13 +28,6 @@
     "Seen": true
   },
   {
-    "MovieName": "The Matrix",
-    "Director": "Lana Wachowski, Lilly Wachowski",
-    "Year": 1999,
-    "Duration": 136,
-    "Seen": true
-  },
-  {
     "MovieName": "Joker",
     "Director": "Todd Phillips",
     "Year": 2019,
@@ -88,6 +81,13 @@
     "Director": "ABC",
     "Year": 400,
     "Duration": 400,
+    "Seen": false
+  },
+  {
+    "MovieName": "The Matrix",
+    "Director": "Lana Wachowski, Lilly Wachowski",
+    "Year": 1999,
+    "Duration": 136,
     "Seen": false
   }
 ]

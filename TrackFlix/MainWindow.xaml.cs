@@ -233,38 +233,65 @@ namespace TrackFlix1
                     {
                         if (item is Movie movie)
                         {
-                            // Check if all other filter criteria are empty
-                            bool isOnlyWatchedFilter =
+                            // Check if only movie title is filled
+                            bool isOnlyMovTitleFilter =
+                                string.IsNullOrEmpty(filterCriteria.Director) &&
+                                filterCriteria.Year == 0 &&
+                                filterCriteria.Duration == 0 &&
+                                filterCriteria.Seen == false;
+                            if (isOnlyMovTitleFilter)
+                            {
+                                return movie.MovieName.IndexOf(filterCriteria.MovieName, StringComparison.OrdinalIgnoreCase) >= 0;
+                            }
+
+
+                            // Check if only director is filled
+                            bool isOnlyDirFilter =
+                                string.IsNullOrEmpty(filterCriteria.MovieName) &&
+                                filterCriteria.Year == 0 &&
+                                filterCriteria.Duration == 0 &&
+                                filterCriteria.Seen == false;
+                            if (isOnlyDirFilter)
+                            {
+                                return movie.Director.IndexOf(filterCriteria.Director, StringComparison.OrdinalIgnoreCase) >= 0;
+                            }
+
+
+                            // Check if only year is filled
+                            bool isOnlyYearFilter =
+                                string.IsNullOrEmpty(filterCriteria.MovieName) &&
+                                string.IsNullOrEmpty(filterCriteria.Director) &&
+                                filterCriteria.Duration == 0 &&
+                                filterCriteria.Seen == false;
+                            if (isOnlyYearFilter)
+                            {
+                                return movie.Year <= filterCriteria.Year;
+                            }
+
+
+                            // Check if only duration is filled
+                            bool isOnlyDurationFilter =
                                 string.IsNullOrEmpty(filterCriteria.MovieName) &&
                                 string.IsNullOrEmpty(filterCriteria.Director) &&
                                 filterCriteria.Year == 0 &&
-                                filterCriteria.Duration == 0;
+                                filterCriteria.Seen == false;
+                            if (isOnlyDurationFilter)
+                            {
+                                return movie.Duration <= filterCriteria.Duration;
+                            }
 
+
+                            // Check if only seen (all other filter criteria are empty)
+                            bool isOnlyWatchedFilter =
+                                string.IsNullOrEmpty(filterCriteria.MovieName) &&
+                                string.IsNullOrEmpty(filterCriteria.Director) &&
+                                filterCriteria.Year == -1 &&
+                                filterCriteria.Duration == -1;
                             if (isOnlyWatchedFilter)
                             {
                                 // If all other criteria are empty, use the "Seen" property as the filter
                                 return movie.Seen == filterCriteria.Seen;
                             }
-
-                            //// Check if all other filter criteria are empty
-                            //bool isOnlyYearFilter =
-                            //    string.IsNullOrEmpty(filterCriteria.MovieName) &&
-                            //    string.IsNullOrEmpty(filterCriteria.Director) &&
-                            //    filterCriteria.Duration == 0 &&
-                            //    filterCriteria.Seen == false;
-                            //if (isOnlyYearFilter)
-                            //{
-                            //    return movie.Year == filterCriteria.Year;
-                            //}
-
-                            // Otherwise, check all criteria
-                            bool matchesMovieName = movie.MovieName.IndexOf(filterCriteria.MovieName, StringComparison.OrdinalIgnoreCase) >= 0;
-                            bool matchesDirector = movie.Director.IndexOf(filterCriteria.Director, StringComparison.OrdinalIgnoreCase) >= 0;
-                            bool matchesYear = filterCriteria.Year == 0 || movie.Year == filterCriteria.Year;
-                            bool matchesDuration = filterCriteria.Duration == 0 || movie.Duration == filterCriteria.Duration;
-
-                            // Combine criteria
-                            return matchesMovieName && matchesDirector && matchesYear && matchesDuration && movie.Seen == filterCriteria.Seen;
                         }
                         return false;
                     };
