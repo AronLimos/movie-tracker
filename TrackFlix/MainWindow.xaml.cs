@@ -3,22 +3,22 @@
  *      Authors: Joash Daligcon, 000358654
  *               Aron Limos, 000371798
  *               Lance Mirano, 000368826
- *   Created on: 2024-11-14
- *      Release: 1.0
- *  Description: Initial release includes the Movie List Display
- *               and Add & Delete Movie Record.
+ *   Created on: 2024-11-26
+ *      Release: 2.0
+ *  Description: A tool to track watched movies, to organize
+ *               movie collection by adding, editing, and
+ *               filtering records, and to monitor watching
+ *               progress by showing the count of movies watched.
  ****************************************************************/
 
 using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Input;
 using TrackFlix;
 
 namespace TrackFlix1
@@ -123,6 +123,9 @@ namespace TrackFlix1
                 // Calculate the progress percentage
                 double percentage = (double) 100 * watchedMovies / totalMovies;
                 ProgressBar.Value = percentage;
+
+                // Updates dynamically based on the counts
+                WatchProgressLabel.Text = $"Watch Progress: {watchedMovies} / {totalMovies} ({percentage.ToString("F2")}%)";
             }
         }
 

@@ -56,13 +56,6 @@
     "Seen": true
   },
   {
-    "MovieName": "ABC",
-    "Director": "ABC",
-    "Year": 400,
-    "Duration": 400,
-    "Seen": true
-  },
-  {
     "MovieName": "Inception",
     "Director": "Christopher Nolan",
     "Year": 2010,
@@ -91,10 +84,10 @@
     "Seen": true
   },
   {
-    "MovieName": "asdasd",
-    "Director": "asdasd",
-    "Year": 123,
-    "Duration": 123,
+    "MovieName": "ABC",
+    "Director": "ABC",
+    "Year": 400,
+    "Duration": 400,
     "Seen": false
   }
 ]
