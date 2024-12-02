@@ -42,13 +42,6 @@
     "Seen": true
   },
   {
-    "MovieName": "Life of Pi",
-    "Director": "Ang Lee",
-    "Year": 2012,
-    "Duration": 127,
-    "Seen": true
-  },
-  {
     "MovieName": "Inception",
     "Director": "Christopher Nolan",
     "Year": 2010,
@@ -89,5 +82,12 @@
     "Year": 1999,
     "Duration": 136,
     "Seen": false
+  },
+  {
+    "MovieName": "Life of Pi",
+    "Director": "Ang Lee",
+    "Year": 2014,
+    "Duration": 127,
+    "Seen": true
   }
 ]

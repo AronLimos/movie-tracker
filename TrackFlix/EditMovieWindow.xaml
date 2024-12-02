@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Edit Movie" Height="300" Width="420" 
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid Background="Black" TextElement.FontFamily="Comic Sans MS">
+    <Grid Background="Black" TextElement.FontFamily="Verdana">
         <!-- Movie Name input field -->
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Movie Name: " 
              VerticalAlignment="Top" Width="190" Foreground="White"/>

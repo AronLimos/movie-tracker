@@ -1,10 +1,10 @@
 ﻿/****************************************************************
- * Project Name: TracKFlix: Personal Movie Tracker Desktop App
+ * Project Name: TrackFlix: Personal Movie Tracker Desktop App
  *      Authors: Joash Daligcon, 000358654
  *               Aron Limos, 000371798
  *               Lance Mirano, 000368826
- *   Created on: 2024-11-26
- *      Release: 2.0
+ *   Created on: 2024-12-01
+ *      Release: 2.1
  *  Description: A tool to track watched movies, to organize
  *               movie collection by adding, editing, and
  *               filtering records, and to monitor watching

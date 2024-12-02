@@ -26,58 +26,6 @@ namespace TrackFlix
             InitializeComponent();
         }
 
-        private void OnFilterMovieClick(object sender, RoutedEventArgs e)
-        {
-            /********************************************
-            * Retrieves the movie details from the input fields,
-            * validates the data, and creates a new Movie object
-            * to be used as filter to the movie collection in MainWindow.
-            ********************************************/
-
-            // Retrieve values from input fields
-            string movieName = txtMovieName.Text;
-            string director = txtDirector.Text;
-            string year = txtYear.Text;
-            string duration = txtMinute.Text;
-            int intYear;
-            int intDuration;
-            bool seen = Seen.IsChecked ?? false;
-
-            // Validate input fields
-            if (string.IsNullOrEmpty(year))
-            {
-                intYear = 0;
-            }
-            else
-            {
-                intYear = int.Parse(year);
-            }
-
-            if (string.IsNullOrEmpty(duration))
-            {
-                intDuration = 0;
-            }
-            else
-            {
-                intDuration = int.Parse(duration);
-            }
-
-            // Create a new Movie object
-            MovieFilter = new Movie
-            {
-                MovieName = movieName,
-                Director = director,
-                Year = intYear,
-                Duration = intDuration,
-                Seen = seen
-            };
-
-            // Indicate success and close the window
-            DialogResult = true;
-            Close();
-
-        }
-
         private void OnMovNameFilterClick(object sender, RoutedEventArgs e)
         {
             /********************************************
