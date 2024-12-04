@@ -8,7 +8,7 @@ Many movie enthusiasts find it challenging to keep track of the films they have 
 - AronLimos
 - kianaaxd
 
-## Version
+## Version History
 
 v1.0
    - Added Movie List Display
