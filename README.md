@@ -7,3 +7,18 @@ Many movie enthusiasts find it challenging to keep track of the films they have 
 - zhoda-lii
 - AronLimos
 - kianaaxd
+
+## Version
+
+v1.0
+   - Added Movie List Display
+   - Added Add & Delete Movie Record
+v2.0
+   - Added Edit Movie Record
+   - Added Filter Movie Record
+   - Added Progress Tracker
+v2.1
+   - Removed unused function
+   - Updated GUI
+v2.2
+   - Refactored code

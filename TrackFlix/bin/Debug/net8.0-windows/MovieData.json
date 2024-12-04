@@ -1,44 +1,9 @@
 [
   {
-    "MovieName": "The Godfather",
-    "Director": "Francis Ford Coppola",
-    "Year": 1972,
-    "Duration": 175,
-    "Seen": true
-  },
-  {
-    "MovieName": "Intersterllar",
-    "Director": "Hans Zimmer",
-    "Year": 2014,
-    "Duration": 169,
-    "Seen": true
-  },
-  {
-    "MovieName": "ABC",
-    "Director": "ABC",
-    "Year": 100,
-    "Duration": 100,
-    "Seen": true
-  },
-  {
-    "MovieName": "1917",
-    "Director": "Sam Mendes",
-    "Year": 2020,
-    "Duration": 119,
-    "Seen": true
-  },
-  {
-    "MovieName": "Joker",
-    "Director": "Todd Phillips",
-    "Year": 2019,
-    "Duration": 162,
-    "Seen": true
-  },
-  {
-    "MovieName": "Whiplash",
-    "Director": "Damien Chazelle",
-    "Year": 2014,
-    "Duration": 107,
+    "MovieName": "The Dark Knight",
+    "Director": "Christopher Nolan",
+    "Year": 2008,
+    "Duration": 152,
     "Seen": true
   },
   {
@@ -49,45 +14,136 @@
     "Seen": true
   },
   {
-    "MovieName": "The Dark Knight",
+    "MovieName": "Gladiator",
+    "Director": "Ridley Scott",
+    "Year": 2000,
+    "Duration": 155,
+    "Seen": true
+  },
+  {
+    "MovieName": "The Departed",
+    "Director": "Martin Scorsese",
+    "Year": 2006,
+    "Duration": 151,
+    "Seen": true
+  },
+  {
+    "MovieName": "The Godfather: Part II",
+    "Director": "Francis Ford Coppola",
+    "Year": 2002,
+    "Duration": 202,
+    "Seen": true
+  },
+  {
+    "MovieName": "Avatar",
+    "Director": "James Cameron",
+    "Year": 2009,
+    "Duration": 162,
+    "Seen": true
+  },
+  {
+    "MovieName": "Interstellar",
     "Director": "Christopher Nolan",
-    "Year": 2008,
-    "Duration": 152,
-    "Seen": true
-  },
-  {
-    "MovieName": "ABC",
-    "Director": "ABC",
-    "Year": 123,
-    "Duration": 123,
-    "Seen": true
-  },
-  {
-    "MovieName": "Terrifier",
-    "Director": "Damien Leone",
-    "Year": 2018,
-    "Duration": 85,
-    "Seen": true
-  },
-  {
-    "MovieName": "ABC",
-    "Director": "ABC",
-    "Year": 400,
-    "Duration": 400,
-    "Seen": false
-  },
-  {
-    "MovieName": "The Matrix",
-    "Director": "Lana Wachowski, Lilly Wachowski",
-    "Year": 1999,
-    "Duration": 136,
-    "Seen": false
-  },
-  {
-    "MovieName": "Life of Pi",
-    "Director": "Ang Lee",
     "Year": 2014,
-    "Duration": 127,
+    "Duration": 169,
     "Seen": true
+  },
+  {
+    "MovieName": "Mad Max: Fury Road",
+    "Director": "George Miller",
+    "Year": 2015,
+    "Duration": 120,
+    "Seen": true
+  },
+  {
+    "MovieName": "The Prestige",
+    "Director": "Christopher Nolan",
+    "Year": 2006,
+    "Duration": 130,
+    "Seen": true
+  },
+  {
+    "MovieName": "Guardians of the Galaxy",
+    "Director": "James Gunn",
+    "Year": 2014,
+    "Duration": 121,
+    "Seen": true
+  },
+  {
+    "MovieName": "The Revenant",
+    "Director": "Alejandro González Iñárritu",
+    "Year": 2015,
+    "Duration": 156,
+    "Seen": true
+  },
+  {
+    "MovieName": "The Social Network",
+    "Director": "David Fincher",
+    "Year": 2010,
+    "Duration": 120,
+    "Seen": true
+  },
+  {
+    "MovieName": "The Wolf of Wall Street",
+    "Director": "Martin Scorsese",
+    "Year": 2013,
+    "Duration": 180,
+    "Seen": true
+  },
+  {
+    "MovieName": "The Martian",
+    "Director": "Ridley Scott",
+    "Year": 2015,
+    "Duration": 144,
+    "Seen": true
+  },
+  {
+    "MovieName": "Coco",
+    "Director": "Lee Unkrich, Adrian Molina",
+    "Year": 2017,
+    "Duration": 105,
+    "Seen": true
+  },
+  {
+    "MovieName": "Frozen",
+    "Director": "Chris Buck, Jennifer Lee",
+    "Year": 2013,
+    "Duration": 102,
+    "Seen": true
+  },
+  {
+    "MovieName": "Spider-Man: No Way Home",
+    "Director": "Jon Watts",
+    "Year": 2021,
+    "Duration": 148,
+    "Seen": false
+  },
+  {
+    "MovieName": "Parasite",
+    "Director": "Bong Joon-ho",
+    "Year": 2019,
+    "Duration": 132,
+    "Seen": false
+  },
+  {
+    "MovieName": "Black Panther",
+    "Director": "Ryan Coogler",
+    "Year": 2018,
+    "Duration": 134,
+    "Seen": false
+  },
+  {
+    "MovieName": "The Lord of the Rings: The Fellowship of the Ring",
+    "Director": "Peter Jackson",
+    "Year": 2001,
+    "Duration": 178,
+    "Seen": true
+  },
+  {
+    "MovieName": "TestMovie",
+    "Director": "TestDirector",
+    "Year": 2025,
+    "Duration": 211,
+    "Seen": false
   }
 ]

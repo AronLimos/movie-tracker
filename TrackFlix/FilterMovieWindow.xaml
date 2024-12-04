@@ -40,7 +40,7 @@
         <CheckBox Content="Seen" HorizontalAlignment="Left" Margin="189,170,0,0" 
            VerticalAlignment="Top" Height="18" Width="86" x:Name="Seen" Foreground="White"/>
 
-        <!-- Button to add the movie -->
+        <!-- Button to filter the movie -->
         <Button Content="Filter" HorizontalAlignment="Left" Margin="318,10,0,0" 
          VerticalAlignment="Top" Height="19" Width="71"
                 Background="#ffffff"
@@ -72,7 +72,7 @@
             Foreground="DarkRed"
             Click="OnSeenFilterClick"/>
 
-        <!-- Button to cancel adding a movie -->
+        <!-- Button to cancel filtering a movie -->
         <Button Content="Cancel" HorizontalAlignment="Left" Margin="299,218,0,0"
          VerticalAlignment="Top" Height="25" Width="90"
                 Background="#ffffff"

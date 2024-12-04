@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="Edit Movie" Height="300" Width="420" 
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    
     <Grid Background="Black" TextElement.FontFamily="Verdana">
         <!-- Movie Name input field -->
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Movie Name: " 
              VerticalAlignment="Top" Width="190" Foreground="White"/>
         <TextBox HorizontalAlignment="Left" Margin="200,10,0,0" TextWrapping="Wrap" 
-    x:Name="txtMovieName" VerticalAlignment="Top" Width="190"/>
+             x:Name="txtMovieName" VerticalAlignment="Top" Width="190"/>
 
         <!-- Director input field -->
         <TextBlock HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="Director: "
@@ -35,6 +36,7 @@
         <!-- Movie watched status (Seen or Unseen) -->
         <TextBlock HorizontalAlignment="Left" Margin="10,170,0,0" TextWrapping="Wrap" Text="Watch Status: " 
              VerticalAlignment="Top" Width="190" Foreground="White"/>
+
         <!-- Checkbox for indicating whether the movie has been seen -->
         <CheckBox Content="Seen" HorizontalAlignment="Left" Margin="200,170,0,0" Foreground="White" 
             VerticalAlignment="Top" Height="18" Width="86" x:Name="Seen"/>
@@ -46,7 +48,7 @@
                 Foreground="DarkRed"
           Click="OnEditMovieClick"/>
 
-        <!-- Button to cancel adding a movie -->
+        <!-- Button to cancel editing a movie -->
         <Button Content="Cancel" HorizontalAlignment="Left" Margin="300,210,0,0"
           VerticalAlignment="Top" Height="25" Width="90"
                  Background="#ffffff"

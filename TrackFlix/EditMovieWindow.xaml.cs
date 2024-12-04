@@ -51,7 +51,7 @@ namespace TrackFlix
             /********************************************
              * Retrieves the movie details from the input fields,
              * validates the data, and creates a new Movie object
-             * to be added to the movie collection in MainWindow.
+             * to be updated to the movie collection in MainWindow.
              ********************************************/
 
             //Retrieve from input fields

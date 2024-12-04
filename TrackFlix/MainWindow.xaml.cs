@@ -3,8 +3,8 @@
  *      Authors: Joash Daligcon, 000358654
  *               Aron Limos, 000371798
  *               Lance Mirano, 000368826
- *   Created on: 2024-12-01
- *      Release: 2.1
+ *   Created on: 2024-12-04
+ *      Release: 2.2
  *  Description: A tool to track watched movies, to organize
  *               movie collection by adding, editing, and
  *               filtering records, and to monitor watching
@@ -295,9 +295,6 @@ namespace TrackFlix1
                         }
                         return false;
                     };
-
-                    // Refresh the view to apply the filter
-                    collectionView.Refresh();
                 }
             }
         }
